@@ -1033,7 +1033,7 @@ async def run() -> None:
         # task_ids={"b0039139", "20270e3b"},
     )
 
-    if solutions_path and attempts_path.exists():
+    if solutions_path:
         evaluate_solutions(
             attempts_solutions_path=attempts_path, truth_solutions_path=solutions_path
         )
